@@ -45,10 +45,10 @@ services:
     web-service:
         container_name: web-service
         build: 
-        context: https://github.com/hyperbolicRbit/rbit.client.web.git
-        args:
-            - NODE_ENV=production
-            - REACT_APP_USERS_SERVICE_URL=${REACT_APP_USERS_SERVICE_URL}
+            context: https://github.com/hyperbolicRbit/rbit.client.web.git
+            args:
+                - NODE_ENV=production
+                - REACT_APP_USERS_SERVICE_URL=${REACT_APP_USERS_SERVICE_URL}
         ports:
             - '9000:9000' # expose ports - HOST:CONTAINER
         depends_on:
