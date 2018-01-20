@@ -21,16 +21,16 @@ env:
     global:
         - DOCKER_COMPOSE_VERSION=1.11.2
         - COMMIT=${TRAVIS_COMMIT::8}
-        - USERS=flask-microservices-users
-        - USERS_REPO=https://github.com/bertobc/$USERS.git
-        - USERS_DB=flask-microservices-users_db
-        - USERS_DB_REPO=https://github.com/bertobc/$USERS.git#master:project/db
-        - CLIENT=flask-microservices-client
-        - CLIENT_REPO=https://github.com/bertobc/$CLIENT.git
-        - SWAGGER=flask-microservices-swagger
-        - SWAGGER_REPO=https://github.com/bertobc/$SWAGGER.git
-        - NGINX=flask-microservices-nginx
-        - NGINX_REPO=https://github.com/bertobc/flask-microservices-main.git#master:nginx
+        - USERS=rbit.api.users
+        - USERS_REPO=https://github.com/hyperbolicRbit/$USERS.git
+        - USERS_DB=rbit.api.users_db
+        - USERS_DB_REPO=https://github.com/hyperbolicRbit/$USERS.git#master:project/db
+        - CLIENT=rbit.api.client
+        - CLIENT_REPO=https://github.com/hyperbolicRbit/$CLIENT.git
+        - SWAGGER=rbit.api.swagger
+        - SWAGGER_REPO=https://github.com/hyperbolicRbit/$SWAGGER.git
+        - NGINX=rbit.api.nginx
+        - NGINX_REPO=https://github.com/hyperbolicRbit/rbit.api.main.git#master:nginx
 
 before_install:
     - sudo rm /usr/local/bin/docker-compose
